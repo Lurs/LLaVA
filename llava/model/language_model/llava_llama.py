@@ -106,6 +106,6 @@ class LlavaLlamaForCausalLM(LlamaForCausalLM, LlavaMetaForCausalLM):
         if images is not None:
             _inputs['images'] = images
         return _inputs
-
-AutoConfig.register("llava", LlavaConfig)
-AutoModelForCausalLM.register(LlavaConfig, LlavaLlamaForCausalLM)
+print("test")
+#AutoConfig.register("llava", LlavaConfig)
+#AutoModelForCausalLM.register(LlavaConfig, LlavaLlamaForCausalLM)
